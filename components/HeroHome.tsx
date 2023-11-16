@@ -31,7 +31,7 @@ const HeroHome: React.FC = () => {
             Laughter. Tears. Thrills. Find it all on Netflix.
           </p>
           <p className="text-white text-[8px] text-center text-lg md:text-1xl lg:text-2xl h-full w-[80%] mt-2 md:mt-5 w-[90%] md:w-[80%] lg:w-[50%] drop-shadow-xl mx-auto">
-          Endless entertainment starts at just ₹ 149. Cancel anytime.
+          Endless entertainment starts here. Cancel anytime.
           </p>
           <p className="text-white text-[8px] text-center md:text-lg h-full w-[80%] mt-2 md:mt-5 w-[90%] md:w-[80%] lg:w-[50%] drop-shadow-xl mx-auto">
           Ready to watch? Enter your email to create or restart your membership.

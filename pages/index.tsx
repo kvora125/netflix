@@ -41,10 +41,10 @@ const Home = () => {
       <InfoModal visible={isOpen} onClose={closeModal} />
       <Navbar showMenu={false} />
       {currentUser ? <Billboard />: <HeroHome />}
-      <div className="pb-40">
+      {currentUser && <div className="pb-40">
         <MovieList title="Trending Now" data={movies} />
         <MovieList title="My List" data={favorites} />
-      </div>
+      </div>}
     </>
   )
 }
