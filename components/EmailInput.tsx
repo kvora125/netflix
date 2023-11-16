@@ -23,12 +23,14 @@ const Input: React.FC<InputProps> = ({ id, onChange, value, label, type }) => {
         pt-6
         pb-1
         w-full
+        min-w-[25vw]
         text-md
-      text-white
-      bg-neutral-700
+        text-white
+        bg-neutral-900
         appearance-none
-        focus:outline-none
-        focus:ring-0
+        focus:outline-white
+        focus:ring-1
+        opacity-70
         peer
         invalid:border-b-1
         "
@@ -39,12 +41,12 @@ const Input: React.FC<InputProps> = ({ id, onChange, value, label, type }) => {
         className="
         absolute 
         text-md
-      text-zinc-400
+        text-zinc-400
         duration-150 
         transform 
         -translate-y-3 
         scale-75 
-        top-4 
+        top-3.5 
         z-10 
         origin-[0] 
         left-6

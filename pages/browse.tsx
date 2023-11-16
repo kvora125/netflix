@@ -28,7 +28,7 @@ export async function getServerSideProps(context: NextPageContext) {
   }
 }
 
-const Home = () => {
+const Browse = () => {
   const { data: movies = [] } = useMovieList();
   const { data: favorites = [] } = useFavorites();
   const {isOpen, closeModal} = useInfoModalStore();
@@ -48,4 +48,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default Browse;

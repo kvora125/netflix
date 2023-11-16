@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { NextPageContext } from 'next';
 import { getSession, signIn } from 'next-auth/react';
 import { useRouter } from 'next/router';
@@ -66,6 +66,15 @@ const Auth = () => {
         console.log(error);
     }
   }, [email, name, password, login]);
+
+  useEffect(()=>{
+    const email: any = window.sessionStorage.getItem("registerEmail");
+    if(email){
+      window.sessionStorage.removeItem("registerEmail");
+      setVariant('register');
+      setEmail(email);
+    }
+  },[]);
 
   return (
     <div className="relative h-full w-full bg-[url('/images/hero.jpg')] bg-no-repeat bg-center bg-fixed bg-cover">
