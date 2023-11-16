@@ -14,10 +14,10 @@ import useCurrentUser from '@/hooks/useCurrentUser';
 export async function getServerSideProps(context: NextPageContext) {
   const session = await getSession(context);
 
-  if (session) {
+  if (!session) {
     return {
       redirect: {
-        destination: '/browse',
+        destination: '/auth',
         permanent: false,
       }
     }
@@ -38,7 +38,7 @@ const Home = () => {
   return (
     <>
       <InfoModal visible={isOpen} onClose={closeModal} />
-      <Navbar showMenu={false} />
+      <Navbar />
       <Billboard />
       <div className="pb-40">
         <MovieList title="Trending Now" data={movies} />
