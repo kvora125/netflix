@@ -15,6 +15,7 @@ import {
   faTags
 } from "@fortawesome/free-solid-svg-icons";
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 
 export async function getServerSideProps(context: NextPageContext) {
   const session = await getSession(context);
@@ -105,12 +106,12 @@ const Home = () => {
 					<div className="tab-1-content-inner">
 						<div>
 							<p className="text-lg">
-								If you decide Netflix isn't for you - no problem. No commitment.
+								If you decide Netflix isn&apos;t for you - no problem. No commitment.
 								Cancel online anytime.
 							</p>
 							<a href="#" className="btn btn-lg">Watch Free For 30 Days</a>
 						</div>
-						<img src="https://i.ibb.co/J2xDJV7/tab-content-1.png" alt="" />
+						<Image src="https://i.ibb.co/J2xDJV7/tab-content-1.png" alt="" />
 					</div>
 				</div>
 
@@ -125,7 +126,7 @@ const Home = () => {
 					</div>
 					<div className="tab-2-content-bottom">
 						<div>
-							<img src="https://i.ibb.co/DpdN7Gn/tab-content-2-1.png" alt="" />
+							<Image src="https://i.ibb.co/DpdN7Gn/tab-content-2-1.png" alt="" />
 							<p className="text-md">
 								Watch on your TV
 							</p>
@@ -135,7 +136,7 @@ const Home = () => {
 							</p>
 						</div>
 						<div>
-							<img src="https://i.ibb.co/R3r1SPX/tab-content-2-2.png" alt="" />
+							<Image src="https://i.ibb.co/R3r1SPX/tab-content-2-2.png" alt="" />
 							<p className="text-md">
 								Watch instantly or download for later
 							</p>
@@ -144,7 +145,7 @@ const Home = () => {
 							</p>
 						</div>
 						<div>
-							<img src="https://i.ibb.co/gDhnwWn/tab-content-2-3.png" alt="" />
+							<Image src="https://i.ibb.co/gDhnwWn/tab-content-2-3.png" alt="" />
 							<p className="text-md">
 								Use any computer
 							</p>
