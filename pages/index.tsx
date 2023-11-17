@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { NextPageContext } from 'next';
 import { getSession } from 'next-auth/react';
-
 import Navbar from '@/components/Navbar';
 import useMovieList from '@/hooks/useMovieList';
 import useFavorites from '@/hooks/useFavorites';
@@ -111,7 +110,7 @@ const Home = () => {
 							</p>
 							<a href="#" className="btn btn-lg">Watch Free For 30 Days</a>
 						</div>
-						<Image src="https://i.ibb.co/J2xDJV7/tab-content-1.png" alt="" />
+						<img src="https://i.ibb.co/J2xDJV7/tab-content-1.png" alt="" />
 					</div>
 				</div>
 
@@ -126,7 +125,7 @@ const Home = () => {
 					</div>
 					<div className="tab-2-content-bottom">
 						<div>
-							<Image src="https://i.ibb.co/DpdN7Gn/tab-content-2-1.png" alt="" />
+							<img src="https://i.ibb.co/DpdN7Gn/tab-content-2-1.png" alt="" />
 							<p className="text-md">
 								Watch on your TV
 							</p>
@@ -136,7 +135,7 @@ const Home = () => {
 							</p>
 						</div>
 						<div>
-							<Image src="https://i.ibb.co/R3r1SPX/tab-content-2-2.png" alt="" />
+							<img src="https://i.ibb.co/R3r1SPX/tab-content-2-2.png" alt="" />
 							<p className="text-md">
 								Watch instantly or download for later
 							</p>
@@ -145,7 +144,7 @@ const Home = () => {
 							</p>
 						</div>
 						<div>
-							<Image src="https://i.ibb.co/gDhnwWn/tab-content-2-3.png" alt="" />
+							<img src="https://i.ibb.co/gDhnwWn/tab-content-2-3.png" alt="" />
 							<p className="text-md">
 								Use any computer
 							</p>
