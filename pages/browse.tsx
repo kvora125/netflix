@@ -10,6 +10,7 @@ import useMovieList from '@/hooks/useMovieList';
 import useFavorites from '@/hooks/useFavorites';
 import useInfoModalStore from '@/hooks/useInfoModalStore';
 import useCurrentUser from '@/hooks/useCurrentUser';
+import Footer from '@/components/Footer';
 
 export async function getServerSideProps(context: NextPageContext) {
   const session = await getSession(context);
@@ -44,6 +45,7 @@ const Browse = () => {
         <MovieList title="Trending Now" data={movies} />
         <MovieList title="My List" data={favorites} />
       </div>
+      <Footer />
     </>
   )
 }

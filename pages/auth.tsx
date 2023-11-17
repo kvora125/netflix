@@ -9,6 +9,7 @@ import { FaGithub } from 'react-icons/fa';
 import Input from '@/components/Input';
 import Link from 'next/link';
 import Image from 'next/image';
+import Footer from '@/components/Footer';
 
 export async function getServerSideProps(context: NextPageContext) {
   const session = await getSession(context);
@@ -79,6 +80,7 @@ const Auth = () => {
   },[]);
 
   return (
+    <>
     <div className="relative h-full w-full bg-[url('/images/hero.jpg')] bg-no-repeat bg-center bg-fixed bg-cover">
       <div className="bg-black w-full h-full lg:bg-opacity-50">
         <nav className="px-12 py-5">
@@ -136,6 +138,8 @@ const Auth = () => {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
 
