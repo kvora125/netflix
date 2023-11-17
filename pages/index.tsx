@@ -11,7 +11,9 @@ import {
   faDoorOpen,
   faCircleStop,
   faTabletAlt,
-  faTags
+  faTags,
+  faTimes,
+  faCheck
 } from "@fortawesome/free-solid-svg-icons";
 import Footer from '@/components/Footer';
 import Image from 'next/image';
@@ -182,15 +184,15 @@ const Home = () => {
 							</tr>
 							<tr>
 								<td>HD Available</td>
-								<td><i className="fas fa-times"></i></td>
-								<td><i className="fas fa-check"></i></td>
-								<td><i className="fas fa-check"></i></td>
+								<td><FontAwesomeIcon icon={faTimes}  /></td>
+								<td><FontAwesomeIcon icon={faCheck}  /></td>
+								<td><FontAwesomeIcon icon={faCheck}  /></td>
 							</tr>
 							<tr>
 								<td>Ultra HD Available</td>
-								<td><i className="fas fa-times"></i></td>
-								<td><i className="fas fa-times"></i></td>
-								<td><i className="fas fa-check"></i></td>
+								<td><FontAwesomeIcon icon={faTimes}  /></td>
+								<td><FontAwesomeIcon icon={faTimes}  /></td>
+								<td><FontAwesomeIcon icon={faCheck}  /></td>
 							</tr>
 							<tr>
 								<td>Screens you can watch on at the same time</td>
@@ -200,27 +202,27 @@ const Home = () => {
 							</tr>
 							<tr>
 								<td>Watch on your laptop, TV, phone and tablet</td>
-								<td><i className="fas fa-check"></i></td>
-								<td><i className="fas fa-check"></i></td>
-								<td><i className="fas fa-check"></i></td>
+								<td><FontAwesomeIcon icon={faCheck}  /></td>
+								<td><FontAwesomeIcon icon={faCheck}  /></td>
+								<td><FontAwesomeIcon icon={faCheck}  /></td>
 							</tr>
 							<tr>
 								<td>Unlimited movies and TV shows</td>
-								<td><i className="fas fa-check"></i></td>
-								<td><i className="fas fa-check"></i></td>
-								<td><i className="fas fa-check"></i></td>
+								<td><FontAwesomeIcon icon={faCheck}  /></td>
+								<td><FontAwesomeIcon icon={faCheck}  /></td>
+								<td><FontAwesomeIcon icon={faCheck}  /></td>
 							</tr>
 							<tr>
 								<td>Cancel anytime</td>
-								<td><i className="fas fa-check"></i></td>
-								<td><i className="fas fa-check"></i></td>
-								<td><i className="fas fa-check"></i></td>
+								<td><FontAwesomeIcon icon={faCheck}  /></td>
+								<td><FontAwesomeIcon icon={faCheck}  /></td>
+								<td><FontAwesomeIcon icon={faCheck}  /></td>
 							</tr>
 							<tr>
 								<td>First month free</td>
-								<td><i className="fas fa-check"></i></td>
-								<td><i className="fas fa-check"></i></td>
-								<td><i className="fas fa-check"></i></td>
+								<td><FontAwesomeIcon icon={faCheck}  /></td>
+								<td><FontAwesomeIcon icon={faCheck}  /></td>
+								<td><FontAwesomeIcon icon={faCheck}  /></td>
 							</tr>
 						</tbody>
 					</table>
