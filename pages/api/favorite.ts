@@ -3,6 +3,7 @@ import { without } from "lodash";
 
 import prismadb from '@/libs/prismadb';
 import serverAuth from "@/libs/serverAuth";
+import movies from'@/movies.json';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
@@ -11,11 +12,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
       const { movieId } = req.body;
   
-      const existingMovie = await prismadb.movie.findUnique({
-        where: {
-          id: movieId,
-        }
-      });
+      const existingMovie = movies?.filter(movie=>movie?.id===movieId)?.[0];
   
       if (!existingMovie) {
         throw new Error('Invalid ID');
@@ -40,11 +37,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
       const { movieId } = req.body;
 
-      const existingMovie = await prismadb.movie.findUnique({
-        where: {
-          id: movieId,
-        }
-      });
+      const existingMovie = movies?.filter(movie=>movie?.id===movieId)?.[0];
 
       if (!existingMovie) {
         throw new Error('Invalid ID');

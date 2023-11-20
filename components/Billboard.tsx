@@ -8,6 +8,7 @@ import useInfoModalStore from '@/hooks/useInfoModalStore';
 const Billboard: React.FC = () => {
   const { openModal } = useInfoModalStore();
   const { data } = useBillboard();
+  console.log("bill board",data)
 
   const handleOpenModal = useCallback(() => {
     openModal(data?.id);
